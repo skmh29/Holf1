@@ -1,0 +1,165 @@
+.track-container {
+  padding: 3rem 0;
+}
+
+.search-card {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.search-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.search-header h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+.search-header p {
+  color: var(--text-light);
+}
+
+.search-form {
+  margin-top: 2rem;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Request Details */
+.request-details-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.request-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.info-label {
+  font-weight: 600;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.info-value {
+  color: var(--text);
+}
+
+.description-text,
+.admin-notes {
+  color: var(--text);
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+/* Timeline */
+.status-timeline {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.status-timeline h3 {
+  margin-bottom: 1.5rem;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  opacity: 0.5;
+}
+
+.timeline-item.active {
+  opacity: 1;
+}
+
+.timeline-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--surface);
+  border: 3px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item.active .timeline-icon {
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
