@@ -1,0 +1,83 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #faf8f1 0%, #faf8f1 100%);
+  color: rgb(0, 0, 0);
+  padding: 4rem 0;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Service Cards */
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.card p {
+  color: var(--text-light);
+}
+
+/* Service Types */
+.service-types-section h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.service-types-section > p {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.service-types-grid .card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.service-types-grid h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Stats Section */
+.stats-section {
+  text-align: center;
+}
+
+.stats-grid {
+  margin-top: 2rem;
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid p {
+  color: var(--text-light);
+}

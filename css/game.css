@@ -1,0 +1,266 @@
+.game-container {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.game-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.game-header h1 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.game-header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.game-info {
+  margin-bottom: 2rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.score-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.start-screen {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.start-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.game-icon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+.start-content h2 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.game-rules {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.game-rules h3 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.game-rules ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-rules li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+}
+
+.game-rules li:last-child {
+  border-bottom: none;
+}
+
+.game-rules li:before {
+  content: "✓ ";
+  color: var(--success-color);
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.question-screen {
+  padding: 2rem 0;
+}
+
+.question-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.question-card h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.answer-btn {
+  background: var(--bg-secondary);
+  border: 2px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: right;
+}
+
+.answer-btn:hover {
+  border-color: var(--accent-color);
+  background: var(--bg-color);
+  transform: translateX(-5px);
+}
+
+.answer-btn.correct {
+  background: #d1fae5;
+  border-color: var(--success-color);
+  color: var(--success-color);
+}
+
+.answer-btn.wrong {
+  background: #fee2e2;
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.answer-btn:disabled {
+  cursor: not-allowed;
+}
+
+.result-screen {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.result-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.result-icon {
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-content h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.final-score {
+  background: linear-gradient(135deg, var(--accent-color), var(--gold-color));
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.final-score span:first-child {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.final-score-value {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.result-message {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .game-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .score-board {
+    gap: 2rem;
+  }
+
+  .score-value {
+    font-size: 1.5rem;
+  }
+
+  .game-icon {
+    font-size: 3rem;
+  }
+
+  .start-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .question-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .answer-btn {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .final-score-value {
+    font-size: 3rem;
+  }
+
+  .result-buttons {
+    flex-direction: column;
+  }
+}
